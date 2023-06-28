@@ -1,0 +1,44 @@
+.memories{
+    width:95%;
+    margin:auto;
+    height: 300px;  
+   
+}
+.single-card{
+    margin-top: 20px ;
+    padding: 20px;
+}
+.card{
+    width:100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin:20px 0px 20px 0px;
+    cursor: pointer;
+}
+.img{
+    height: 30vh;
+    border:5px solid white;
+    border-top-left-radius:5px ;
+    border-top-right-radius: 5px;
+}
+h3{
+    text-align: center;
+}
+.h1-tag{
+    margin:0 0 -1% 42%;
+    width:14%;
+    border-bottom: 2px solid red;
+    color:white;
+}
+@media (max-width:768px){
+    .memories{
+        width:80%;
+        margin:auto
+    }
+    .h1-tag{
+        margin:0 0 -8% 33%;
+        width:8rem;
+    }
+    /* .memories{
+        height: 200px;
+    } */
+}

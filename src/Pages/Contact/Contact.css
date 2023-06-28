@@ -1,0 +1,32 @@
+
+body{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+.contact{
+   margin:10% 0 0 10%;
+}
+
+.div1{
+    text-align: left;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-weight: bolder;
+   color:#ffffff
+}
+.singlecard{
+    margin-right:20px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}  
+.line{
+    width: 90%;
+    color: white;
+    
+    
+}
+@media (max-width:768px){
+    .contact{
+        margin-top:30%;
+    }
+}

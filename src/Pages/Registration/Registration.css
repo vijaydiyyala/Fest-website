@@ -1,0 +1,31 @@
+.process{
+    height: 80vh;
+    line-height: 200%;
+}
+.process-text{
+    margin: 5.5rem 0 0 3rem;
+    color: #19caf2;
+    border-bottom: 3px solid white;
+    width: 23rem;
+}
+.steps{
+    color: white;
+    margin: 1rem 2rem 1rem 2rem;
+}
+.steps ol li{
+    text-align: left;
+    padding-left: 5px;
+}
+.steps span{
+    color: red;
+}
+@media (max-width:768px){
+    .process-text{
+        margin: 5.5rem 0 0 2.5rem;
+        width: 16.5rem;
+    }
+    .steps{
+        margin:1rem 1.5rem 0 1.5rem;
+    }
+
+}

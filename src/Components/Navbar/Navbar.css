@@ -1,0 +1,149 @@
+.navigate {
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* background-color:rgb(2, 2, 75); */
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: black;
+    /* box-shadow: 0 0px 10px 12px rgba(113, 107, 107, 0.23); */
+    
+}
+.name {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+.name:hover {
+    color: white;
+}
+
+.logo-img{
+    width: 6rem;
+    height: 5rem;
+}
+
+.title-img{
+    width: 15rem;
+    height: 9rem;
+}
+
+
+.menu {
+    margin-left: auto;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+}   
+
+.menu ul li {
+    list-style-type: none;
+    margin: 0 1rem;
+}
+.links{ 
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 30px 10px 20px 10px;
+}
+.links i{
+    margin:0.3rem;
+}
+.links:hover {
+    color: red;
+    border-radius: 20px;
+}
+.active {
+    color: red;
+}
+.menu-btn {
+    display: none;
+}
+
+.menu-btn:hover {
+    background-color:red ;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .menu-btn {
+        border: 0;
+        height: 40px;
+        width: 40px;
+        padding: 0.5rem;
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        transform: translateY(-50%);
+        display: block;
+    }
+    .menu ul {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 0%;
+        height: calc(100vh - 77px);
+        background-color: white;
+        transition: 0.3s ease-in-out;
+    }
+    .menu.expanded ul {
+        position:absolute;
+        top: 60px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 77px);
+        background-color: rgb(2, 2, 75);
+    }
+    .menu.expanded ul li{
+        text-align: center;
+    }
+    .menu.expanded .links {
+        position: relative;
+        color: white;
+        left: 0;
+        width: 100%;
+        padding: 5px 0px 5px 0px; 
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .menu.expanded .active{
+        color:red ;
+    }
+    
+   
+}
+
+@media screen and (max-width:500px){
+    .logo-img{
+        width: 5rem;
+        height: 4rem;
+    }
+    .title-img{
+        width: 10rem;
+        height: 8rem;
+    }
+}

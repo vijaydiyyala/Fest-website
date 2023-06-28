@@ -1,0 +1,90 @@
+.events{
+    padding: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+.btn1  {
+    margin-right: 20px ;
+}
+.btn1 a{
+    text-decoration: none;
+    color: white;
+}
+.btn2{
+    margin-left: 20px;
+}
+.btn2 a{
+    text-decoration: none;
+        color: white;
+}
+.presentations{
+    margin-top: -40px;
+    display: flex;
+}
+.workshops{
+    margin-top:-40px;
+    display: flex;
+}
+.spot{
+    margin-top: -40px;
+    display: flex;
+}
+.single-card{
+    margin-right:30px;
+    margin-bottom: -20px;
+}
+.heading1{
+    margin-left: 50px;
+    color: #19caf2;
+    border-bottom: 3px solid white;
+    width: 32%;
+
+}
+.heading2{
+    margin-left: 50px;
+        color: #19caf2;
+        border-bottom: 3px solid white;
+        width: 55%;
+}
+.heading3{
+    margin-left: 50px;
+        color: #19caf2;
+        border-bottom: 3px solid white;
+        width: 42%;
+}
+
+@media (max-width:768px){
+    .single-card{
+        margin-right:0px;
+    }
+    .presentations{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .workshops{
+        display: flex;
+        flex-direction: column;
+    }
+    .spot{
+        display: flex;
+        flex-direction: column;
+    }
+    .heading1{
+        margin-left: 82px;
+        width:51%
+    }
+    .heading2{
+        margin-left: 26px;
+        width:85%
+    }
+    .heading3{
+        margin-left: 50px;
+        width:66%
+    }
+}
